@@ -1,0 +1,12 @@
+#/bin/bash
+for first in {a..z}
+do
+	for second in {a..z}
+	do
+		out="$first$second"
+		if [[ $out != "oo" ]]
+		then
+			echo $out
+		fi
+	done
+done
